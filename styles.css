@@ -44,9 +44,9 @@ body {
     border: 1px solid black;
     border-radius:2px;
     table {
-        font-size: 24px;
         tr:last-child { text-align: center;}
         tr > td { 
+            font-size: 24px;
             padding: 20px;
             border: 1px solid black;
             border-radius: 2px;

@@ -9,40 +9,40 @@
 <body>
     <main class="container">
         <article class="card">
-            <section class="feedback">
+            <section class="feedback" id="feedback">
                 <p>0</p>
             </section>
             <section class="keyboard-space">
                 <table>
                     <tbody>
                         <tr>
-                            <td onclick="appendNumber('C')">C</td>
-                            <td onclick="appendNumber('±')">±</td>
-                            <td onclick="appendNumber('%')">%</td>
-                            <td onclick="appendNumber('÷')">÷</td>
+                            <td class="botao" onclick="appendOperator('C')">C</td>
+                            <td class="botao" onclick="appendOperator('±')">±</td>
+                            <td class="botao" onclick="appendoperator('%')">%</td>
+                            <td class="botao" onclick="appendOperator('÷')">÷</td>
                         </tr>
                         <tr>
-                            <td onclick="appendNumber('7')">7</td>
-                            <td onclick="appendNumber('8')">8</td>
-                            <td onclick="appendNumber('9')">9</td>
-                            <td onclick="appendNumber('X')">X</td>
+                            <td class="botao" onclick="appendNumber('7')">7</td>
+                            <td class="botao" onclick="appendNumber('8')">8</td>
+                            <td class="botao" onclick="appendNumber('9')">9</td>
+                            <td class="botao" onclick="appendOperator('X')">X</td>
                         </tr>
                         <tr>
-                            <td onclick="appendNumber('4')">4</td>
-                            <td onclick="appendNumber('5')">5</td>
-                            <td onclick="appendNumber('6')">6</td>
-                            <td onclick="appendNumber('-')">-</td>
+                            <td class="botao" onclick="appendNumber('4')">4</td>
+                            <td class="botao" onclick="appendNumber('5')">5</td>
+                            <td class="botao" onclick="appendNumber('6')">6</td>
+                            <td class="botao" onclick="appendOperator('-')">-</td>
                         </tr>
                         <tr>
-                            <td onclick="appendNumber('1')">1</td>
-                            <td onclick="appendNumber('2')">2</td>
-                            <td onclick="appendNumber('3')">3</td>
-                            <td onclcik="appendNumber('+')">+</td>
+                            <td class="botao" onclick="appendNumber('1')">1</td>
+                            <td class="botao" onclick="appendNumber('2')">2</td>
+                            <td class="botao" onclick="appendNumber('3')">3</td>
+                            <td class="botao" onclick="appendOperator('+')">+</td>
                         </tr>
                         <tr>
-                            <td colspan="2" onclick="appendNumber('0')">0</td>
-                            <td>,</td>
-                            <td>=</td>
+                            <td colspan="2 class="botao" onclick="appendNumber('0')">0</td>
+                            <td class="botao" onclick="appendOperator(',')">,</td>
+                            <td class="botao" onclick="appendOperator('=')">=</td>
                         </tr>
                     </tbody>
                 </table>
