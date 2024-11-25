@@ -1,20 +1,5 @@
-let feedback = document.getElementById("feedback");
-let currentInput = "";
-let currentOperator = "";
-
-function appendNumber(value) {
-    currentInput =+ value;
-    feedback.textContent = currentInput; 
-}
-
-function appendOperador(operator) {
-    if(currentInput === "" && operator !== ".") return
-    currentInput += operator;
-    feedback.textContent = currentInput;
-}
-
-function clearInput() {
-    currentInput = "";
-    feedback.textContent = currentInput;
-}
-
+const numberTd = document.querySelectorAll('[appen-number]')
+const operatorTd = document.querySelectorAll('[append-operator]')
+const equalsTd = document.querySelectorAll('[append-equals]')
+const deleteTd = document.querySelectorAll('[append-delete]')
+const allClearTd = document.querySelectorAll('[append-all-clear]')

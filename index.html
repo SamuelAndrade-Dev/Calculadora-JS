@@ -10,39 +10,43 @@
     <main class="container">
         <article class="card">
             <section class="feedback" id="feedback">
-                <p>0</p>
+                <input type="text" class="feedback" id="feedback" disabled></input>
+            </section>
+            <section class="output">
+                <section onclick="previousOperand" class="previous-operand"></section>
+                <section class="current-operand"></section>
             </section>
             <section class="keyboard-space">
                 <table>
                     <tbody>
                         <tr>
-                            <td class="botao" onclick="appendOperator('C')">C</td>
-                            <td class="botao" onclick="appendOperator('±')">±</td>
-                            <td class="botao" onclick="appendoperator('%')">%</td>
-                            <td class="botao" onclick="appendOperator('÷')">÷</td>
+                            <td class="clear" onclick="clearDisplay('C')">C</td>
+                            <td class="operator" onclick="appendOperator('±')">±</td>
+                            <td class="operator" onclick="appendoperator('%')">%</td>
+                            <td class="operator" onclick="appendOperator('÷')">÷</td>
                         </tr>
                         <tr>
-                            <td class="botao" onclick="appendNumber('7')">7</td>
-                            <td class="botao" onclick="appendNumber('8')">8</td>
-                            <td class="botao" onclick="appendNumber('9')">9</td>
-                            <td class="botao" onclick="appendOperator('X')">X</td>
+                            <td class="number" onclick="appendNumber('7')">7</td>
+                            <td class="number" onclick="appendNumber('8')">8</td>
+                            <td class="number" onclick="appendNumber('9')">9</td>
+                            <td class="operator" onclick="appendOperator('X')">X</td>
                         </tr>
                         <tr>
-                            <td class="botao" onclick="appendNumber('4')">4</td>
-                            <td class="botao" onclick="appendNumber('5')">5</td>
-                            <td class="botao" onclick="appendNumber('6')">6</td>
-                            <td class="botao" onclick="appendOperator('-')">-</td>
+                            <td class="number" onclick="appendNumber('4')">4</td>
+                            <td class="number" onclick="appendNumber('5')">5</td>
+                            <td class="number" onclick="appendNumber('6')">6</td>
+                            <td class="operator" onclick="appendOperator('-')">-</td>
                         </tr>
                         <tr>
-                            <td class="botao" onclick="appendNumber('1')">1</td>
-                            <td class="botao" onclick="appendNumber('2')">2</td>
-                            <td class="botao" onclick="appendNumber('3')">3</td>
-                            <td class="botao" onclick="appendOperator('+')">+</td>
+                            <td class="number" onclick="appendNumber('1')">1</td>
+                            <td class="number" onclick="appendNumber('2')">2</td>
+                            <td class="number" onclick="appendNumber('3')">3</td>
+                            <td class="operator" onclick="appendOperator('+')">+</td>
                         </tr>
                         <tr>
-                            <td colspan="2 class="botao" onclick="appendNumber('0')">0</td>
-                            <td class="botao" onclick="appendOperator(',')">,</td>
-                            <td class="botao" onclick="appendOperator('=')">=</td>
+                            <td colspan="2" class="number" onclick="appendNumber('0')">0</td>
+                            <td class="operator" onclick="appendOperator(',')">,</td>
+                            <td class="result" onclick="calculateResult('=')">=</td>
                         </tr>
                     </tbody>
                 </table>

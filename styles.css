@@ -33,16 +33,22 @@ body {
     border: 1px solid black;
     border-radius:2px;
     font-size: 36px;
-    p { 
-        text-align: end;
-        padding-right: 5px;
-        background-color: rgb(203, 203, 203);
-    }
+    width: 100%;
 }
 
 .keyboard-space {
     border: 1px solid black;
     border-radius:2px;
+    .clear {
+        background-color: yellow;
+    }
+    .result {
+        background-color: rgb(92, 131, 165);
+    }
+    .number  {
+        background-color: aliceblue;
+        border: none;
+    }
     table {
         tr:last-child { text-align: center;}
         tr > td { 
