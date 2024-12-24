@@ -30,3 +30,5 @@ function calculate() {
         display.value = 'Erro';
     }
 }
+
+alert("Sinta a breve esperiência de usar uma calculadora feita por mim!")
