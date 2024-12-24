@@ -29,11 +29,15 @@ body {
     text-align: center;
 }
 
-.feedback {
-    border: 1px solid black;
-    border-radius:2px;
+.display {
+    border: 3px solid black;
+    border-radius: 2px;
     font-size: 36px;
     width: 100%;
+    height: 100%;
+    background-color: rgb(233, 216, 216);
+    text-align: end;
+    padding
 }
 
 .keyboard-space {

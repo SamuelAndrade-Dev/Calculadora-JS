@@ -10,42 +10,38 @@
     <main class="container">
         <article class="card">
             <section class="feedback" id="feedback">
-                <input type="text" class="feedback" id="feedback" disabled></input>
-            </section>
-            <section class="output">
-                <section onclick="previousOperand" class="previous-operand"></section>
-                <section class="current-operand"></section>
+                <p></p>
             </section>
             <section class="keyboard-space">
                 <table>
                     <tbody>
                         <tr>
-                            <td class="clear" onclick="clearDisplay('C')">C</td>
-                            <td class="operator" onclick="appendOperator('±')">±</td>
-                            <td class="operator" onclick="appendoperator('%')">%</td>
-                            <td class="operator" onclick="appendOperator('÷')">÷</td>
+                            <td class="clear" onclick="clean()">C</td>
+                            <td class="operator" onclick="back()"><</td>
+                            <td class="operator" onclick="insert('%')">%</td>
+                            <td class="operator" onclick="insert('÷')">÷</td>
                         </tr>
                         <tr>
-                            <td class="number" onclick="appendNumber('7')">7</td>
-                            <td class="number" onclick="appendNumber('8')">8</td>
-                            <td class="number" onclick="appendNumber('9')">9</td>
-                            <td class="operator" onclick="appendOperator('X')">X</td>
+                            <td class="number" onclick="insert('7')">7</td>
+                            <td class="number" onclick="insert('8')">8</td>
+                            <td class="number" onclick="insert('9')">9</td>
+                            <td class="operator" onclick="insert('X')">X</td>
                         </tr>
                         <tr>
-                            <td class="number" onclick="appendNumber('4')">4</td>
-                            <td class="number" onclick="appendNumber('5')">5</td>
-                            <td class="number" onclick="appendNumber('6')">6</td>
-                            <td class="operator" onclick="appendOperator('-')">-</td>
+                            <td class="number" onclick="insert('4')">4</td>
+                            <td class="number" onclick="insert('5')">5</td>
+                            <td class="number" onclick="insert('6')">6</td>
+                            <td class="operator" onclick="insert('-')">-</td>
                         </tr>
                         <tr>
-                            <td class="number" onclick="appendNumber('1')">1</td>
-                            <td class="number" onclick="appendNumber('2')">2</td>
-                            <td class="number" onclick="appendNumber('3')">3</td>
-                            <td class="operator" onclick="appendOperator('+')">+</td>
+                            <td class="number" onclick="insert('1')">1</td>
+                            <td class="number" onclick="insert('2')">2</td>
+                            <td class="number" onclick="insert('3')">3</td>
+                            <td class="operator" onclick="insert('+')">+</td>
                         </tr>
                         <tr>
-                            <td colspan="2" class="number" onclick="appendNumber('0')">0</td>
-                            <td class="operator" onclick="appendOperator(',')">,</td>
+                            <td colspan="2" class="number" onclick="insert('0')">0</td>
+                            <td class="operator" onclick="insert(',')">,</td>
                             <td class="result" onclick="calculateResult('=')">=</td>
                         </tr>
                     </tbody>
